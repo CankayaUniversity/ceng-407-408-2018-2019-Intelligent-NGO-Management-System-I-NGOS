@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ilkyar.Contracts</RootNamespace>
+    <AssemblyName>Ilkyar.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\DTO\ActivityLeadershipBadgeDTO.cs" />
+    <Compile Include="Entities\DTO\AddProjectActivityDTO.cs" />
+    <Compile Include="Entities\DTO\AddVolunteerVoteDTO.cs" />
+    <Compile Include="Entities\DTO\AddConversationDTO.cs" />
+    <Compile Include="Entities\DTO\GeniusBadgeDTO.cs" />
+    <Compile Include="Entities\DTO\VolunteerSuggestionFilterDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDetailSuggestionDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectManagerBadgeDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectScheduleProjectDetailDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateProjectActivityDTO.cs" />
+    <Compile Include="Entities\DTO\UploadRequirementListFileDTO.cs" />
+    <Compile Include="Entities\DTO\VolunteerBadgeDTO.cs" />
+    <Compile Include="Entities\DTO\ConversationDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNGOInvitationDTO.cs" />
+    <Compile Include="Entities\DTO\AddSurveyProjectDetailQuestionDTO.cs" />
+    <Compile Include="Entities\DTO\DashboardDTO.cs" />
+    <Compile Include="Entities\DTO\DeleteConversationDTO.cs" />
+    <Compile Include="Entities\DTO\EvaluateVolunteerDTO.cs" />
+    <Compile Include="Entities\DTO\InterestDTO.cs" />
+    <Compile Include="Entities\DTO\InterestVolunteerDTO.cs" />
+    <Compile Include="Entities\DTO\LeadershipBoardDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectActivityDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectLeadershipBadgeDTO.cs" />
+    <Compile Include="Entities\DTO\SurveyProjectDetailResultDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateNGOInvitationDTO.cs" />
+    <Compile Include="Entities\DTO\NGOInvitationDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateProjectDetailActivityScheduleDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDetailActivityScheduleDTO.cs" />
+    <Compile Include="Entities\DTO\VolunteerSuggestionDTO.cs" />
+    <Compile Include="Entities\DTO\VoteVolunteerProjectDetailDTO.cs" />
+    <Compile Include="Entities\DTO\SurveyProjectDetailQuestionDTO.cs" />
+    <Compile Include="Entities\DTO\VoteProjectProjectDetailDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateProjectDetailActivityDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDetailActivityDTO.cs" />
+    <Compile Include="Entities\DTO\ActivityDTO.cs" />
+    <Compile Include="Entities\DTO\AddProjectDetailActivityDTO.cs" />
+    <Compile Include="Entities\DTO\DeleteProjectDetailActivityDTO.cs" />
+    <Compile Include="Entities\DTO\DeleteParticipantDTO.cs" />
+    <Compile Include="Entities\DTO\AddParticipantDTO.cs" />
+    <Compile Include="Entities\DTO\CityDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewDonatorDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewHostSchoolTeacherDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewNGOHeadDTO.cs" />
+    <Compile Include="Entities\DTO\ParticipantDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDetailSummaryDTO.cs" />
+    <Compile Include="Entities\DTO\TownDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateProjectDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewProjectDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewProjectManagerDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewReportDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewScholarshipCommitteeDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewStudentDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewVolunteerDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewYonderDTO.cs" />
+    <Compile Include="Entities\DTO\CreateProjectDetailDTO.cs" />
+    <Compile Include="Entities\DTO\CreateUserDTO.cs" />
+    <Compile Include="Entities\DTO\DepartmentDTO.cs" />
+    <Compile Include="Entities\DTO\OccupationDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectFilterDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectManagerDTO.cs" />
+    <Compile Include="Entities\DTO\CreateNewSchoolmasterDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectSubDetailDTO.cs" />
+    <Compile Include="Entities\DTO\ReportDTO.cs" />
+    <Compile Include="Entities\DTO\ReportFilterDTO.cs" />
+    <Compile Include="Entities\DTO\ScholarshipHolderDTO.cs" />
+    <Compile Include="Entities\DTO\UniversityDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateProjectSubDetailDTO.cs" />
+    <Compile Include="Entities\DTO\UpdateUserDTO.cs" />
+    <Compile Include="Entities\DTO\UserDTO.cs" />
+    <Compile Include="Entities\DTO\ProjectDetailActivityFilterDTO.cs" />
+    <Compile Include="Entities\DTO\UserFilterDTO.cs" />
+    <Compile Include="Entities\DTO\UserTypeDTO.cs" />
+    <Compile Include="Entities\EF\Activity.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Badge.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\BadgeProjectManager.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\BadgeVolunteer.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Branch.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\City.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Conversation.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Department.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Donation.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\DonationRecord.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\DonationType.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Donator.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\HostSchoolTeacher.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\IlkyarModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\InterestVolunteer.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\NgoHead.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\NGOInvitation.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Occupation.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Project.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectActivity.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectDetail.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectDetailActivity.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectDetailActivitySchedule.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectDetailParticipant.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectDetailVote.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectManager.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ProjectType.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Region.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Report.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\RequirementProjectDetail.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ScholarshipCommittee.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\ScholarshipHolder.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Schoolmaster.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\SchoolType.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Sibling.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Student.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\SurveyProjectDetailQuestion.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Town.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Transportation.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\TransportationType.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\University.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\UploadRequirementList.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\User.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\UserType.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\Volunteer.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\VolunteerVote.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EF\YonDer.cs">
+      <DependentUpon>IlkyarModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Enums\EnumInvitationStatusType.cs" />
+    <Compile Include="Entities\Enums\EnumProjectDetailActivityScheduleOperationType.cs" />
+    <Compile Include="Entities\Enums\EnumActivityStatusType.cs" />
+    <Compile Include="Entities\Enums\EnumNGOInvitationStatusType.cs" />
+    <Compile Include="Entities\Enums\EnumProjectStatusType.cs" />
+    <Compile Include="Entities\Enums\EnumProjectSubDetailStatusType.cs" />
+    <Compile Include="Entities\Enums\EnumSchoolType.cs" />
+    <Compile Include="Entities\Enums\EnumProjectType.cs" />
+    <Compile Include="Entities\Enums\EnumTransportationType.cs" />
+    <Compile Include="Entities\Enums\EnumMessageType.cs" />
+    <Compile Include="Entities\Enums\EnumUserStatus.cs" />
+    <Compile Include="Entities\Enums\EnumUserType.cs" />
+    <Compile Include="Entities\Enums\EnumServiceResultType.cs" />
+    <Compile Include="Entities\ModelBase.cs" />
+    <Compile Include="Helpers\Api\ApiKey.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="ServiceContracts\Account\IAccount.cs" />
+    <Compile Include="ServiceContracts\Message\IMessage.cs" />
+    <Compile Include="ServiceContracts\Parameter\IParameter.cs" />
+    <Compile Include="ServiceContracts\Profile\IProfile.cs" />
+    <Compile Include="ServiceContracts\Project\IProject.cs" />
+    <Compile Include="ServiceContracts\Report\IReport.cs" />
+    <Compile Include="ServiceContracts\ServiceResult.cs" />
+    <Compile Include="ServiceContracts\User\IUser.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Entities\EF\IlkyarModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IlkyarModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

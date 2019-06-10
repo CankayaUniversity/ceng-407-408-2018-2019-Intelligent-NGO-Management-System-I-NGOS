@@ -1,0 +1,320 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Ilkyar.Web.SiteMaster" %>
+
+<%@ Import Namespace="Ilkyar.Contracts.Entities.DTO" %>
+<%@ Import Namespace="Ilkyar.Web.Helpers" %>
+<%@ Import Namespace="Ilkyar.Contracts.Entities.Enums" %>
+<%@ Import Namespace="Ilkyar.Contracts.Helpers" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css" />
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/layout_fixed_custom.js"></script>
+    <script type="text/javascript" src="assets/js/pages/form_layouts.js"></script>
+
+    <!-- /theme JS files -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body class="navbar-top">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i><span class="text-semibold">&nbsp MENÜ</span></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/placeholder.jpg" alt="">
+                        <span><%= UserHelper.FirstLastName %> (<%= EnumHelper.GetEnumDescription(typeof(EnumUserType), UserHelper.UserTypeId.ToString()) %>)</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="Profile.aspx"><i class="icon-user"></i>Profil</a></li>
+                        <li><a href="Inbox.aspx"><i class="icon-bubbles4"></i>Mesajlar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Logout.aspx"><i class="icon-switch2"></i>Çıkış</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-fixed">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+
+                                <!-- Main -->
+                                <li><a href="Home.aspx"><i class="icon-home4"></i><span>Anasayfa</span></a></li>
+
+                                <% if (UserHelper.CurrentUser.UserTypeId == (int)EnumUserType.NGOHead) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="CreateProject.aspx"><i class="icon-stack-plus"></i>Yeni Proje Oluştur</a></li>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>                                        
+                                        <li><a href="InvitationConfirmation.aspx"><i class="icon-envelop3"></i>Proje Talep Bilgileri</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-file-text"></i><span>Raporlar</span></a>
+                                    <ul>
+                                        <li><a href="ListReport.aspx"><i class="icon-file-text2"></i>Yön-Der Raporlarını Listele</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="AddUser.aspx"><i class="icon-user-plus"></i><span>Yeni Kullanıcı Ekle</span></a></li>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <%} %>
+
+                                <% if (UserHelper.CurrentUser.UserTypeId == (int)EnumUserType.ProjectManager) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>
+                                        <li><a href="ProjectSchedule.aspx"><i class="icon-calendar"></i>Proje Planlama</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="AddUser.aspx"><i class="icon-user-plus"></i><span>Kullanıcı Ekle</span></a></li>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <%} %>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.ScholarshipCommittee) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-file-text"></i><span>Raporlar</span></a>
+                                    <ul>
+                                        <li><a href="ListReport.aspx"><i class="icon-file-text2"></i>Raporları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="AddUser.aspx"><i class="icon-user-plus"></i><span>Kullanıcı Ekle</span></a></li>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.ScholarshipHolder) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.Donator) %>
+                                <%{ %>
+
+                                <% }%>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.Schoolmaster) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>
+                                        <li><a href="VoteProject.aspx"><i class="icon-stack-text"></i>Projeleri Değerlendir</a></li>
+                                        <li><a href="InviteNGO.aspx"><i class="icon-envelop3"></i>İLKYAR'ı Davet Et</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="AddUser.aspx"><i class="icon-user-plus"></i><span>Kullanıcı Ekle</span></a></li>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.HostSchoolTeacher) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>
+                                        <li><a href="VoteProject.aspx"><i class="icon-stack-text"></i>Projeleri Değerlendir</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.Student) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>
+                                        <li><a href="VoteVolunteer.aspx"><i class="icon-stack-text"></i>Etkinlikleri Değerlendir</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <% if (UserHelper.CurrentUser.UserTypeId == (int)EnumUserType.Volunteer) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#"><i class="icon-stack"></i><span>Projeler</span></a>
+                                    <ul>
+                                        <li><a href="ListProject.aspx"><i class="icon-stack-text"></i>Projeleri Listele</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <%} %>
+
+                                <% if (UserHelper.UserTypeId == (int)EnumUserType.YonDer) %>
+                                <%{ %>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-file-text"></i><span>Raporlar</span></a>
+                                    <ul>
+                                        <li><a href="CreateReport.aspx"><i class="icon-file-plus"></i>Yeni Rapor Oluştur</a></li>
+                                        <li><a href="ListReport.aspx"><i class="icon-file-text2"></i>Raporları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#.aspx"><i class="icon-users4"></i><span>Kullanıcılar</span></a>
+                                    <ul>
+                                        <li><a href="ListUsers.aspx"><i class="icon-profile"></i>Kullanıcıları Listele</a></li>
+                                    </ul>
+                                </li>
+                                <% }%>
+
+                                <!-- /main -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Page header -->
+                <div class="page-header page-header-default">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <asp:ContentPlaceHolder ID="PageHeaderContentPlaceHolder" runat="server" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /page header -->
+
+                <!-- Content area -->
+                <div class="content">
+                    <form id="form1" runat="server">
+                        <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
+                        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+                    </form>
+
+                    <!-- Footer -->
+                    <div class="footer text-muted">
+                        &copy; 2019 
+                    </div>
+                    <!-- /footer -->
+
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+</body>
+</html>

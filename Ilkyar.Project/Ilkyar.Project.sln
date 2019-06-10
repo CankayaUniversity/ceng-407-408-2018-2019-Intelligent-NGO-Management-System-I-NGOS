@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.Data", "Ilkyar.Data\Ilkyar.Data.csproj", "{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.Contracts", "Ilkyar.Contracts\Ilkyar.Contracts.csproj", "{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.Business", "Ilkyar.Business\Ilkyar.Business.csproj", "{998E80D0-1C1A-4F33-A00C-0A92428AB315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.Infrastructure", "Ilkyar.Infrastructure\Ilkyar.Infrastructure.csproj", "{402C47EE-4B4F-4A58-A2EB-02222E9BFD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.WebAPI", "Ilkyar.WebAPI\Ilkyar.WebAPI.csproj", "{16BE0394-8D1F-4646-BA66-884A734958F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{C4129FE3-817A-4115-A49C-FCB1D7057C49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{BC4FD105-0E3D-4286-94FF-8E6726E26FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilkyar.Web", "Ilkyar.Web\Ilkyar.Web.csproj", "{282126A5-CA75-4CA0-AB1E-70854D7CA042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998E80D0-1C1A-4F33-A00C-0A92428AB315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998E80D0-1C1A-4F33-A00C-0A92428AB315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998E80D0-1C1A-4F33-A00C-0A92428AB315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998E80D0-1C1A-4F33-A00C-0A92428AB315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402C47EE-4B4F-4A58-A2EB-02222E9BFD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402C47EE-4B4F-4A58-A2EB-02222E9BFD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402C47EE-4B4F-4A58-A2EB-02222E9BFD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402C47EE-4B4F-4A58-A2EB-02222E9BFD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BE0394-8D1F-4646-BA66-884A734958F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BE0394-8D1F-4646-BA66-884A734958F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BE0394-8D1F-4646-BA66-884A734958F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BE0394-8D1F-4646-BA66-884A734958F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282126A5-CA75-4CA0-AB1E-70854D7CA042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282126A5-CA75-4CA0-AB1E-70854D7CA042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282126A5-CA75-4CA0-AB1E-70854D7CA042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282126A5-CA75-4CA0-AB1E-70854D7CA042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B0BC149-175E-4AD0-AC6A-F1C235C1BCD1} = {C4129FE3-817A-4115-A49C-FCB1D7057C49}
+		{B0DF0447-57F2-48F8-9CA3-9BAF479F50DE} = {C4129FE3-817A-4115-A49C-FCB1D7057C49}
+		{998E80D0-1C1A-4F33-A00C-0A92428AB315} = {C4129FE3-817A-4115-A49C-FCB1D7057C49}
+		{402C47EE-4B4F-4A58-A2EB-02222E9BFD04} = {C4129FE3-817A-4115-A49C-FCB1D7057C49}
+		{16BE0394-8D1F-4646-BA66-884A734958F2} = {C4129FE3-817A-4115-A49C-FCB1D7057C49}
+		{282126A5-CA75-4CA0-AB1E-70854D7CA042} = {BC4FD105-0E3D-4286-94FF-8E6726E26FA7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BB080CB-0845-4533-8349-1DBE6108C495}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/kokturkozge
+		SccProjectUniqueName0 = Ilkyar.Business\\Ilkyar.Business.csproj
+		SccProjectTopLevelParentUniqueName0 = Ilkyar.Project.sln
+		SccProjectName0 = Ilkyar.Business
+		SccAuxPath0 = https://dev.azure.com/kokturkozge
+		SccLocalPath0 = Ilkyar.Business
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Ilkyar.Contracts\\Ilkyar.Contracts.csproj
+		SccProjectTopLevelParentUniqueName1 = Ilkyar.Project.sln
+		SccProjectName1 = Ilkyar.Contracts
+		SccAuxPath1 = https://dev.azure.com/kokturkozge
+		SccLocalPath1 = Ilkyar.Contracts
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Ilkyar.Data\\Ilkyar.Data.csproj
+		SccProjectTopLevelParentUniqueName2 = Ilkyar.Project.sln
+		SccProjectName2 = Ilkyar.Data
+		SccAuxPath2 = https://dev.azure.com/kokturkozge
+		SccLocalPath2 = Ilkyar.Data
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Ilkyar.Web\\Ilkyar.Web.csproj
+		SccProjectTopLevelParentUniqueName3 = Ilkyar.Project.sln
+		SccProjectName3 = Ilkyar.Web
+		SccAuxPath3 = https://dev.azure.com/kokturkozge
+		SccLocalPath3 = Ilkyar.Web
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = Ilkyar.WebAPI\\Ilkyar.WebAPI.csproj
+		SccProjectTopLevelParentUniqueName4 = Ilkyar.Project.sln
+		SccProjectName4 = Ilkyar.WebAPI
+		SccAuxPath4 = https://dev.azure.com/kokturkozge
+		SccLocalPath4 = Ilkyar.WebAPI
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = Ilkyar.Infrastructure\\Ilkyar.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName5 = Ilkyar.Project.sln
+		SccProjectName5 = Ilkyar.Infrastructure
+		SccAuxPath5 = https://dev.azure.com/kokturkozge
+		SccLocalPath5 = Ilkyar.Infrastructure
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

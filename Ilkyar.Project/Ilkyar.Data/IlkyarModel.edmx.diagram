@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="65d53c0bc3c74dc3ad8e0c054eee8e26" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="IlkyarModel.Activity" Width="1.5" PointX="11.25" PointY="28.75" />
+        <EntityTypeShape EntityType="IlkyarModel.Badge" Width="1.5" PointX="11.25" PointY="31.875" />
+        <EntityTypeShape EntityType="IlkyarModel.BadgeProjectManager" Width="1.5" PointX="10.5" PointY="72.375" />
+        <EntityTypeShape EntityType="IlkyarModel.BadgeVolunteer" Width="1.5" PointX="13.5" PointY="36.75" />
+        <EntityTypeShape EntityType="IlkyarModel.Branch" Width="1.5" PointX="6" PointY="26" />
+        <EntityTypeShape EntityType="IlkyarModel.City" Width="1.5" PointX="10.5" PointY="65.25" />
+        <EntityTypeShape EntityType="IlkyarModel.Conversation" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="IlkyarModel.Department" Width="1.5" PointX="9" PointY="22.75" />
+        <EntityTypeShape EntityType="IlkyarModel.Donation" Width="1.5" PointX="10.5" PointY="34.625" />
+        <EntityTypeShape EntityType="IlkyarModel.DonationRecord" Width="1.5" PointX="10.5" PointY="44.75" />
+        <EntityTypeShape EntityType="IlkyarModel.DonationType" Width="1.5" PointX="8.25" PointY="30.875" />
+        <EntityTypeShape EntityType="IlkyarModel.Donator" Width="1.5" PointX="5.25" PointY="39" />
+        <EntityTypeShape EntityType="IlkyarModel.HostSchoolTeacher" Width="1.5" PointX="8.25" PointY="38.875" />
+        <EntityTypeShape EntityType="IlkyarModel.InterestVolunteer" Width="1.5" PointX="13.5" PointY="39.75" />
+        <EntityTypeShape EntityType="IlkyarModel.NgoHead" Width="1.5" PointX="5.25" PointY="68.375" />
+        <EntityTypeShape EntityType="IlkyarModel.NGOInvitation" Width="1.5" PointX="10.5" PointY="47.625" />
+        <EntityTypeShape EntityType="IlkyarModel.Occupation" Width="1.5" PointX="3" PointY="34.625" />
+        <EntityTypeShape EntityType="IlkyarModel.Project" Width="1.5" PointX="7.5" PointY="71.375" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectActivity" Width="1.5" PointX="9.75" PointY="69.25" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectDetail" Width="1.5" PointX="12.75" PointY="70.625" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectDetailActivity" Width="1.5" PointX="18" PointY="58.75" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectDetailActivitySchedule" Width="1.5" PointX="20.25" PointY="66.125" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectDetailParticipant" Width="1.5" PointX="9.75" PointY="55.5" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectDetailVote" Width="1.5" PointX="8.25" PointY="34.375" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectManager" Width="1.5" PointX="5.25" PointY="71.875" />
+        <EntityTypeShape EntityType="IlkyarModel.ProjectType" Width="1.5" PointX="5.25" PointY="76.625" />
+        <EntityTypeShape EntityType="IlkyarModel.Region" Width="1.5" PointX="8.25" PointY="65.875" />
+        <EntityTypeShape EntityType="IlkyarModel.Report" Width="1.5" PointX="9.75" PointY="59.125" />
+        <EntityTypeShape EntityType="IlkyarModel.RequirementProjectDetail" Width="1.5" PointX="15" PointY="85.25" />
+        <EntityTypeShape EntityType="IlkyarModel.ScholarshipCommittee" Width="1.5" PointX="5.25" PointY="33.5" />
+        <EntityTypeShape EntityType="IlkyarModel.ScholarshipHolder" Width="1.5" PointX="7.5" PointY="49.125" />
+        <EntityTypeShape EntityType="IlkyarModel.Schoolmaster" Width="1.5" PointX="8.25" PointY="44" />
+        <EntityTypeShape EntityType="IlkyarModel.SchoolType" Width="1.5" PointX="10.5" PointY="79.125" />
+        <EntityTypeShape EntityType="IlkyarModel.Sibling" Width="1.5" PointX="9.75" PointY="51.5" />
+        <EntityTypeShape EntityType="IlkyarModel.Student" Width="1.5" PointX="5.25" PointY="43.75" />
+        <EntityTypeShape EntityType="IlkyarModel.SurveyProjectDetailQuestion" Width="1.5" PointX="6" PointY="29.25" />
+        <EntityTypeShape EntityType="IlkyarModel.Town" Width="1.5" PointX="10.5" PointY="75.75" />
+        <EntityTypeShape EntityType="IlkyarModel.Transportation" Width="1.5" PointX="15" PointY="71.5" />
+        <EntityTypeShape EntityType="IlkyarModel.TransportationType" Width="1.5" PointX="12.75" PointY="67.625" />
+        <EntityTypeShape EntityType="IlkyarModel.University" Width="1.5" PointX="6.75" PointY="22.875" />
+        <EntityTypeShape EntityType="IlkyarModel.UploadRequirementList" Width="1.5" PointX="8.25" PointY="62.625" />
+        <EntityTypeShape EntityType="IlkyarModel.User" Width="1.5" PointX="3" PointY="38.125" />
+        <EntityTypeShape EntityType="IlkyarModel.UserType" Width="1.5" PointX="0.75" PointY="39.875" />
+        <EntityTypeShape EntityType="IlkyarModel.Volunteer" Width="1.5" PointX="11.25" PointY="38.5" />
+        <EntityTypeShape EntityType="IlkyarModel.VolunteerVote" Width="1.5" PointX="15" PointY="55.625" />
+        <EntityTypeShape EntityType="IlkyarModel.YonDer" Width="1.5" PointX="5.25" PointY="64.125" />
+        <AssociationConnector Association="IlkyarModel.FK_InterestVolunteer_Activity" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectActivity_Activity" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivity_Activity" />
+        <AssociationConnector Association="IlkyarModel.FK_VolunteerVote_Activity" />
+        <AssociationConnector Association="IlkyarModel.FK_BadgeProjectManager_Badge" />
+        <AssociationConnector Association="IlkyarModel.FK_BadgeVolunteer_Badge" />
+        <AssociationConnector Association="IlkyarModel.FK_BadgeProjectManager_ProjectManager" />
+        <AssociationConnector Association="IlkyarModel.FK_BadgeVolunteer_Volunteer" />
+        <AssociationConnector Association="IlkyarModel.FK_HostSchoolTeacher_Branch" />
+        <AssociationConnector Association="IlkyarModel.FK_City_Region" />
+        <AssociationConnector Association="IlkyarModel.FK_HostSchoolTeacher_City" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetail_City" />
+        <AssociationConnector Association="IlkyarModel.FK_Schoolmaster_City" />
+        <AssociationConnector Association="IlkyarModel.FK_Student_City" />
+        <AssociationConnector Association="IlkyarModel.FK_Town_City" />
+        <AssociationConnector Association="IlkyarModel.FK_Department_University" />
+        <AssociationConnector Association="IlkyarModel.FK_Volunteer_Department" />
+        <AssociationConnector Association="IlkyarModel.FK_Donation_DonationType" />
+        <AssociationConnector Association="IlkyarModel.FK_Donation_Donator" />
+        <AssociationConnector Association="IlkyarModel.FK_DonationRecord_DonationType" />
+        <AssociationConnector Association="IlkyarModel.FK_DonationRecord_Donator" />
+        <AssociationConnector Association="IlkyarModel.FK_Donator_Occupation" />
+        <AssociationConnector Association="IlkyarModel.FK_Donator_User" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipHolder_Donator" />
+        <AssociationConnector Association="IlkyarModel.FK_HostSchoolTeacher_Town" />
+        <AssociationConnector Association="IlkyarModel.FK_HostSchoolTeacher_User" />
+        <AssociationConnector Association="IlkyarModel.FK_InterestVolunteer_Volunteer" />
+        <AssociationConnector Association="IlkyarModel.FK_NgoHead_User" />
+        <AssociationConnector Association="IlkyarModel.FK_NGOInvitation_Schoolmaster" />
+        <AssociationConnector Association="IlkyarModel.FK_NGOInvitation_UploadRequirementList" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipHolder_OccupationFather" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipHolder_OccupationMother" />
+        <AssociationConnector Association="IlkyarModel.FK_Sibling_Occupation" />
+        <AssociationConnector Association="IlkyarModel.FK_Volunteer_Occupation" />
+        <AssociationConnector Association="IlkyarModel.FK_Project_ProjectManager" />
+        <AssociationConnector Association="IlkyarModel.FK_Project_ProjectType" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectActivity_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetail_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivity_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivitySchedule_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailParticipant_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailVote_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_VolunteerVote_Project" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectActivity_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetail_SchoolType" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetail_Town" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivity_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivitySchedule_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailParticipant_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailVote_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_RequirementProjectDetail_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_Transportation_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_VolunteerVote_ProjectDetail" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivity_Volunteer" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailActivitySchedule_ProjectDetailActivity" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailParticipant_User" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailParticipant_UserType" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailVote_SurveyProjectDetailQuestion" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectDetailVote_User" />
+        <AssociationConnector Association="IlkyarModel.FK_ProjectManager_User" />
+        <AssociationConnector Association="IlkyarModel.FK_Report_ScholarshipHolder" />
+        <AssociationConnector Association="IlkyarModel.FK_Report_YonDer" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipCommittee_User" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipHolder_User" />
+        <AssociationConnector Association="IlkyarModel.FK_ScholarshipHolder_YonDer" />
+        <AssociationConnector Association="IlkyarModel.FK_Sibling_ScholarshipHolder" />
+        <AssociationConnector Association="IlkyarModel.FK_Schoolmaster_Town" />
+        <AssociationConnector Association="IlkyarModel.FK_Schoolmaster_User" />
+        <AssociationConnector Association="IlkyarModel.FK_Student_Town" />
+        <AssociationConnector Association="IlkyarModel.FK_Student_User1" />
+        <AssociationConnector Association="IlkyarModel.FK_Transportation_TransportationType" />
+        <AssociationConnector Association="IlkyarModel.FK_Transportation_TransportationType1" />
+        <AssociationConnector Association="IlkyarModel.FK_Volunteer_University" />
+        <AssociationConnector Association="IlkyarModel.FK_User_User" />
+        <AssociationConnector Association="IlkyarModel.FK_User_UserType" />
+        <AssociationConnector Association="IlkyarModel.FK_Volunteer_User" />
+        <AssociationConnector Association="IlkyarModel.FK_VolunteerVote_User" />
+        <AssociationConnector Association="IlkyarModel.FK_YonDer_User" />
+        <AssociationConnector Association="IlkyarModel.FK_VolunteerVote_Volunteer" />
+        <AssociationConnector Association="IlkyarModel.FK_YonDer_YonDer" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
